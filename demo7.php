@@ -27,6 +27,15 @@ class BloggsCommsManager extends CommsManager
 	}
 
 	function getTtdEncoder() {
-		// todo: 148 (162 / 465)
+		return new BloggsTtdEncoder();
+	}
+
+	function getContactEncoder()
+	{
+		return new BloggsContactEncoder();
+	}
+
+	function getFooterText() {
+		return "BloggsCal footer\n";
 	}
 }
